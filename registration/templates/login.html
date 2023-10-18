@@ -147,6 +147,11 @@ button{
 
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password" name="pass">
+        {% for message in messages%}
+
+             <p class="abc" style="text-align:center;color:red;font-size:13px">{{message}}</p>
+
+             {% endfor%}
 
         <button type="submit">Log In</button>
         <!-- <input type="button" value=""> -->
